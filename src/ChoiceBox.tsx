@@ -1,5 +1,5 @@
 import { item } from "./ChoiceBoxContainer";
-import Menu from "./old/Menu";
+import Menu from "./components/Menu";
 
 type Props = { item: item };
 

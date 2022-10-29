@@ -26,7 +26,7 @@ export default function Editor({ source, setSource }: Props) {
         }}
       /> */}
       <textarea
-        className="h-96 min-h-96 w-96 p-4 bg-neutral-50 border overflow-y-auto"
+        className="h-96 min-h-96 w-96 p-4 self-center bg-neutral-50 border overflow-y-auto"
         value={JSON.stringify(editorJson, undefined, 4)}
         onChange={(e) => setEditorJson(JSON.parse(e.target.value))}
       />

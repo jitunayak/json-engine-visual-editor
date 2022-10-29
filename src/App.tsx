@@ -34,7 +34,7 @@ function App() {
   ]);
   return (
     <div className="flex flex-col justify-center items-center p-10">
-      <div className="flex flex-row">
+      <div className="flex  flex-col md:flex-row ">
         <div className="flex flex-col">
           <h1 className="text-2xl font-medium">Rules Engine Visual Editor</h1>
           <ChoiceBoxContainer items={details} />

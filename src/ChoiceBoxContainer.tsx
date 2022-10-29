@@ -12,7 +12,7 @@ type Props = { items?: item[] };
 
 export default function ChoiceBoxContainer({ items }: Props) {
   return (
-    <div className="border ml-0 m-6">
+    <div className="border ml-0 m-6 shadow-xl rounded-sm">
       {items?.map((item, index) => {
         return Object.prototype.hasOwnProperty.call(item, "all") ? (
           LogicalContainer(ChoiceBoxContainer)
@@ -33,7 +33,7 @@ export default function ChoiceBoxContainer({ items }: Props) {
         ): JSX.Element {
           return (
             <div className="items-center justify-center flex">
-              <p className="p-4 border w-min mr-0 m-2">
+              <p className="p-4 border w-min mr-0 m-2 shadow-xl">
                 {item?.all ? "all" : "any"}
               </p>
               <div className="w-20 h-px bg-neutral-200"></div>

@@ -18,7 +18,11 @@ export default function ChoiceBox({ item }: Props) {
         placeholder={"Choose Operator"}
       />
       {item.operator === "in" ? (
-        <Menu placeholder={"Enter A Value"} listitems={["USA", "IND"]} />
+        <Menu
+          placeholder={"Enter A Value"}
+          listitems={["USA", "IND"]}
+          selected={item?.value}
+        />
       ) : (
         <input
           className="broder w-min-32 text-center bg-neutral-200 p-2"

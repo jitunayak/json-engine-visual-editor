@@ -25,7 +25,7 @@ function App() {
             {
               fact: "country",
               operator: "in",
-              value: "IND",
+              value: "USA",
             },
           ],
         },
